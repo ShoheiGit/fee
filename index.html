@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>料金表</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>料金シミュレーター</h1>
+    </header>
+
+    <main>
+        <p>料金シミュレーターをご利用ありがとうございます。</p>
+        <p>ここで簡単な見積もりが出来ます。</p>
+        <p>予算内に収まらなかった場合でも「○○円内の予算で作って欲しい」など、柔軟な対応が出来ますので是非一度ご相談ください。</p>
+        <div class="fee_table">
+            <div class="table_keisan">
+
+                <table class="design_table">
+                    <div class="table_head">
+                        <tr class="table_th">
+                            <th>デザイン</th>
+                            <th>個数</th>
+                        </tr>
+                    </div>
+
+                    <div class="table_data">
+                        <tr>
+                            <td id="design_top_fee"></td>
+                            <td><input value="" name="textbox01" type="number" id="DesignTopNum" class="sample_input">ページ</td>
+                        </tr>
+    
+                        <tr>
+                            <td id="design_sub_fee"></td>
+                            <td><input type="number" id="DesignSubNum">ページ</td>
+                        </tr>
+                    </div>
+
+                    
+                </table>
+
+                <table class="coding_table">
+                    <div class="table_head">
+                        <tr class="table_th">
+                            <th>コーディング</th>
+                            <th>個数</th>
+                        </tr>
+                    </div>
+
+                    <div class="table_data">
+                        <tr>
+                            <td id="coding_top_fee"></td>
+                            <td><input value="" name="textbox01" type="number" id="CodingTopNum" >ページ</td>
+                        </tr>
+    
+                        <tr>
+                            <td id="coding_sub_fee"></td>
+                            <td><input type="number" id="CodingSubNum">ページ</td>
+                        </tr>
+                        <tr>
+                            <td id="coding_mass_fee"></td>
+                            <td><input type="number" id="CodingMassNum">ページ</td>
+                        </tr>
+                    </div>
+
+                </table>
+
+                <table class="wp_table">
+                    <div class="table_head">
+                        <tr class="table_th">
+                            <th>Wordpress化</th>
+                            <th>個数</th>
+                        </tr>
+                    </div>
+
+                    <div class="table_data">
+                        <tr>
+                            <td id="wp_top_fee"></td>
+                            <td><input type="number" id="WpTopNum"> ページ</td>
+                        </tr>
+    
+                        <tr>
+                            <td id="wp_sub_fee"></td>
+                            <td><input type="number" id="WpSubNum">ページ</td>
+                        </tr>
+                    </div>
+                </table>
+
+                
+            </div>
+            
+            <div class="goukei">
+                <tr>
+                    <th>合計金額</th>
+                    <td><input value="" name="textbox02" type="text" id="sum" readonly>円</td>
+                </tr>
+            </div>
+
+        </div>
+
+        
+    </main>
+    
+    <script src="main.js"></script>
+</body>
+</html>
